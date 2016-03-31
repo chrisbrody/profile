@@ -1,0 +1,8 @@
+#newProfile form > .form-group:first-child input {
+	display: inline;
+	width: 49.5%;
+}
+
+#updatedProfile {
+	display: none;
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+  		<!-- title -->
+  		<title>User Profile Page</title>
+
+  		<!-- bootstrap css -->
+  		<link rel="stylesheet" href="css/bootstrap.css">
+  		<!-- custom css -->
+  		<link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+	    <div class="container">
+	    	
+	    	<div id="newProfile" class="col-sm-6 col-sm-offset-3">
+	    		<h1>New Profile</h1>
+	    		<!-- new profile -->
+    			<form name="newprofile1">
+    				<!-- NAME -->
+    				<div class="form-group">
+    					<input type="text" name="userfname" class="form-control" placeholder="First Name">
+    					<input type="text" name="userlname" class="form-control" placeholder="Last Name">
+    				</div>
+    				<!-- GENDER -->
+    				<div class="form-group">
+    					Gender: 
+    					<label class="radio-inline">
+						  <input type="radio" name="usergender" value="male"> Male
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="usergender" value="female"> Female
+						</label>
+    				</div>
+    				<!-- EMAIL -->
+    				<div class="form-group">
+    					<input type="email" name="userEmail" class="form-control" placeholder="Email Address">
+    				</div>
+    				<!-- PHONE NUMBER -->
+    				<div class="form-group">
+    					<input type="number" name="userPhone" class="form-control" placeholder="Phone Number">
+    				</div>
+    				<!-- FAVORITE PRIMARY COLOR -->
+    				<div class="form-group">
+    					<select name="favColor" class="form-control">
+    						<option value="Red">Red</option>
+    						<option value="Green">Green</option>
+    						<option value="Blue">Blue</option>
+    					</select>
+    				</div>
+    				<!-- CONTINENT OF BIRTH -->
+    				<div class="form-group">
+    					Continent of birth: 
+    					<br>
+    					<label class="radio-inline">
+						  <input type="radio" name="userBirth" value="Africa"> Africa
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="userBirth" value="Asia"> Asia
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="userBirth" value="Australia"> Australia
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="userBirth" value="Europe"> Europe
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="userBirth" value="North America"> North America
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" name="userBirth" value="South America"> South America
+						</label>
+    				</div>
+    				<button id="sendDataButton" type="button" class="btn btn-default">Continue</button>
+    			</form>
+
+	    	</div><!-- /.col-sm-6 -->
+	    	
+	    	<div id="updatedProfile" class="col-sm-6 col-sm-offset-3">
+	    		<h1>User Profile</h1>
+	    		<!-- updated profile -->
+	    		<div>
+	    			<h2 id='userName'></h2>
+	    			<h3 id="userGender"></h3>
+	    			<h3 id="userEmail"></h3>
+	    			<h3 id="userPhone"></h3>
+	    			<h3 id="userColor"></h3>
+	    			<h3 id="userBirthplace"></h3>
+
+	    			
+	    		</div><!-- /#updatedProfile -->
+
+	    	</div><!-- /.col-sm-6 -->
+
+	    </div><!-- /.container -->
+
+
+    	<script src="js/jquery-1.11.3.js"></script>
+    	<script src="js/bootstrap.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
