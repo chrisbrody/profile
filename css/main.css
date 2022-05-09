@@ -6,3 +6,20 @@
 #updatedProfile {
 	display: none;
 }
+
+#results {
+	color: #fff;
+	margin: 10px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.success {
+	background-color: #5cb85c;
+	transition: 0.3s all ease-in-out;
+}
+
+.failure {
+	background-color: #d9534f;
+	transition: 0.3s all ease-in-out;
+}
